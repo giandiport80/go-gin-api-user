@@ -84,12 +84,7 @@ Semua endpoint berada di bawah prefix `/api/users`
 ```json
 {
   "success": true,
-  "data": {
-    "id": 1,
-    "name": "John Doe",
-    "email": "john@example.com",
-    "created_at": "2025-08-04T00:00:00Z"
-  }
+  "message": "Data berhasil disimpan"
 }
 ```
 
@@ -123,6 +118,14 @@ Semua endpoint berada di bawah prefix `/api/users`
 {
   "name": "Jane Doe",
   "email": "jane@example.com"
+}
+```
+
+**Response:**
+```json
+{
+  "success": true,
+  "message": "Data berhasil disimpan"
 }
 ```
 
