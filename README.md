@@ -138,7 +138,7 @@ Semua endpoint berada di bawah prefix `/api/users`
 ```json
 {
   "success": true,
-  "message": "User deleted successfully"
+  "message": "Data berhasil dihapus"
 }
 ```
 

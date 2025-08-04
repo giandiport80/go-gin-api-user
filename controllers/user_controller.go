@@ -66,6 +66,7 @@ func UpdateUser(c *gin.Context) {
 			"success": false,
 			"message": "User not found",
 		})
+		return
 	}
 
 	var input models.User
@@ -74,6 +75,7 @@ func UpdateUser(c *gin.Context) {
 			"success":  false,
 			"messaage": err.Error(),
 		})
+		return
 	}
 
 	if err := config.DB.Model(&user).Updates(models.User{
@@ -84,6 +86,7 @@ func UpdateUser(c *gin.Context) {
 			"success": false,
 			"message": err.Error(),
 		})
+		return
 	}
 
 	c.JSON(http.StatusOK, gin.H{
