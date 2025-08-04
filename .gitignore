@@ -1,0 +1,36 @@
+# Binaries built by Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Output of `go test -coverprofile`
+*.coverprofile
+
+# Output of `go build`, `go install`, `go run`
+/bin/
+/build/
+/dist/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Environment and configuration files
+.env
+.env.*
+
+# Dependency management
+go.sum
+
+# Vendor directory (if using `go mod vendor`)
+/vendor/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
